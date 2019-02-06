@@ -54,10 +54,10 @@ header{
             transform: rotate(none);
         }
         33%{
-            transform: rotate(-5deg);
+            transform: rotate(-2deg);
         }
         66%{
-            transform: rotate(5deg)
+            transform: rotate(2deg)
         }
         100%{
             transform: rotate(none);
@@ -67,10 +67,41 @@ header{
         animation-name: movimiento;
         animation-duration: 2s;
     }
-    @-webkit-keyframes{
+    @-webkit-keyframes  movimiento2{
         0%{
-            
+            position: relative;
+            left: 2px;
+            bottom: 1px;
         }
+        20%{
+            position: relative;
+            left: 4px;
+            bottom: 2px;
+        }
+        40%{
+            position: relative;
+            left: 6px;
+            bottom: 3px;
+        }
+        60%{
+            position: relative;
+            left: 4px;
+            bottom: 2px;
+        }
+        80%{
+            position: relative;
+            left: 2px;
+            bottom: 1px;
+        }
+        100%{
+            position: relative;
+            left: 0px;
+            bottom: 0px;
+        }
+    }
+    #secundario .imagen2:hover{
+        animation-name: movimiento2;
+        animation-duration: 1s;
     }
 }
 @media (max-width:899px){
