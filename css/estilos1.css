@@ -34,21 +34,22 @@ header{
     #secundario img{
         width: 100%;
     }
-    .imagen2 img{
-        height: 98%;
+    .imagen1 img,.imagen2 img{
         border: 1px solid black;
     }
-    .imagen1 img{
-        border: 1px solid black;
+    #secundario p{
+        text-decoration: underline;
+        margin: 0px;
+        text-align: center;
+        color: black;
+        font-size: 20px;
     }
     #principal img,#secundario img{
         box-shadow: 2px 2px 2px #02010a;}
     header nav a:hover{
         text-decoration: overline;
     }
-    #inicio:hover{
-        color: aqua;
-    }
+    
     @-webkit-keyframes movimiento{
         0%{
             transform: rotate(none);
@@ -63,7 +64,7 @@ header{
             transform: rotate(none);
         }
     }
-    #secundario .imagen1:hover{
+    #secundario .imagen1 img:hover{
         animation-name: movimiento;
         animation-duration: 2s;
     }
@@ -99,7 +100,7 @@ header{
             bottom: 0px;
         }
     }
-    #secundario .imagen2:hover{
+    #secundario .imagen2 img:hover{
         animation-name: movimiento2;
         animation-duration: 1s;
     }
