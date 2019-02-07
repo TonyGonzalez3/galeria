@@ -2,10 +2,38 @@ body{
     font-family: 'Dancing Script', cursive;
     background-color: #02010a;
     color: white;
+    margin-left: auto;
+    margin-right: auto;
 }
 header{
     background-color: #5b7989;
 }
+
+#principal{
+    background-color: #82c3a6;
+}
+#principal img{
+        width: 100%;
+    }
+    #secundario{
+        background-color: #d5c75f;
+    }
+#secundario img{
+        width: 100%;
+    }
+    .imagen1 img,.imagen2 img{
+        border: 1px solid black;
+    }
+    #secundario p{
+        text-decoration: underline;
+        margin: 0px;
+        text-align: center;
+        color: black;
+        font-size: 20px;
+    }
+    #principal img,#secundario img{
+        box-shadow: 2px 2px 2px #02010a;}
+    
 @-webkit-keyframes movimiento{
     0%{
         transform: rotate(none);
@@ -52,100 +80,42 @@ header{
         bottom: 0px;
     }
 }
+header nav a:hover{
+    text-decoration: overline;
+}
+#secundario .imagen1 img:hover{
+    animation-name: movimiento;
+    animation-duration: 2s;
+}
+    
+#secundario .imagen2 img:hover{
+    animation-name: movimiento2;
+    animation-duration: 1s;
+}
 
 @media (min-width:900px){
     body{
         max-width: 900px;
-        margin-left: auto;
-        margin-right: auto;
     }
     #principal{
         padding: 20px 50px 20px 50px;
-        background-color: #82c3a6;
-    }
-    #principal img{
-        width: 100%;
     }
     #secundario{
         display: -webkit-flex;
 	    display: flex;
-        background-color: #d5c75f;
     }
     #secundario div{
         padding: 20px 30px 20px 30px;
     }
-    #secundario img{
-        width: 100%;
-    }
-    .imagen1 img,.imagen2 img{
-        border: 1px solid black;
-    }
-    #secundario p{
-        text-decoration: underline;
-        margin: 0px;
-        text-align: center;
-        color: black;
-        font-size: 20px;
-    }
-    #principal img,#secundario img{
-        box-shadow: 2px 2px 2px #02010a;}
-    header nav a:hover{
-        text-decoration: overline;
-    }
-    #secundario .imagen1 img:hover{
-        animation-name: movimiento;
-        animation-duration: 2s;
-    }
-    
-    #secundario .imagen2 img:hover{
-        animation-name: movimiento2;
-        animation-duration: 1s;
-    }
 }
-@media (max-width:899px){
+@media (max-width:900px){
     body{
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
     }
     #principal{
         padding: 20px 30px 20px 30px;
-        background-color: #82c3a6;
-    }
-    #principal img{
-        width: 100%;
-    }
-    #secundario{
-        background-color: #d5c75f;
     }
     #secundario div{
         padding: 20px 30px 20px 30px;
-    }
-    #secundario img{
-        width: 100%;
-    }
-    .imagen1 img,.imagen2 img{
-        border: 1px solid black;
-    }
-    #secundario p{
-        text-decoration: underline;
-        margin: 0px;
-        text-align: center;
-        color: black;
-        font-size: 20px;
-    }
-    #principal img,#secundario img{
-        box-shadow: 2px 2px 2px #02010a;}
-    header nav a:hover{
-        text-decoration: overline;
-    }
-    #secundario .imagen1 img:hover{
-        animation-name: movimiento;
-        animation-duration: 2s;
-    }
-    
-    #secundario .imagen2 img:hover{
-        animation-name: movimiento2;
-        animation-duration: 1s;
     }
 }
